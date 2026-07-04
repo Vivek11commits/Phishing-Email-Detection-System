@@ -1,0 +1,3 @@
+index=phishing
+| stats count by action
+| sort - count

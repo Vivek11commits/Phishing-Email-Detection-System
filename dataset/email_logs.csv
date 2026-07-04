@@ -1,0 +1,13 @@
+time,sender_email,sender_domain,recipient,subject,url,attachment_name,attachment_hash,source_ip,spf_result,dkim_result,dmarc_result,action
+2026-07-04 09:15:12,security-update@micr0soft-support.com,micr0soft-support.com,employee1@company.com,Password Reset Required,http://micr0soft-support.com/reset,reset.html,44d88612fea8a8f36de82e1278abb02f,185.244.25.33,fail,fail,fail,quarantined
+2026-07-04 09:22:48,payroll@company-payroll.net,company-payroll.net,employee2@company.com,Updated Salary Slip,http://company-payroll.net/login,salary_update.pdf,d41d8cd98f00b204e9800998ecf8427e,91.219.236.120,fail,pass,fail,blocked
+2026-07-04 09:35:10,it-support@company.com,company.com,employee3@company.com,System Maintenance Notification,https://company.com/support,maintenance.pdf,NA,10.0.0.5,pass,pass,pass,delivered
+2026-07-04 09:48:27,helpdesk@secure-helpdesk.co,secure-helpdesk.co,employee4@company.com,Verify Your Account,http://secure-helpdesk.co/verify,verify.html,5d41402abc4b2a76b9719d911017c592,45.155.205.233,fail,fail,fail,quarantined
+2026-07-04 10:05:44,invoice@billing-update.org,billing-update.org,employee5@company.com,Invoice Payment Pending,http://billing-update.org/invoice,invoice.docm,098f6bcd4621d373cade4e832627b4f6,193.32.162.90,fail,fail,fail,blocked
+2026-07-04 10:16:18,amazon@amazon.com,amazon.com,employee6@company.com,Order Confirmation,https://amazon.com/orders,invoice.pdf,NA,52.94.225.248,pass,pass,pass,delivered
+2026-07-04 10:27:56,microsoft@account-security.com,account-security.com,employee7@company.com,Unusual Sign-in Activity,http://account-security.com/login,security_notice.html,ab56b4d92b40713acc5af89985d4b786,104.248.22.10,fail,fail,fail,quarantined
+2026-07-04 10:42:31,admin@company.com,company.com,employee8@company.com,Monthly Report,https://company.com/report,report.pdf,NA,10.0.0.12,pass,pass,pass,delivered
+2026-07-04 10:58:07,support@dropbox-share.net,dropbox-share.net,employee9@company.com,Shared Document,http://dropbox-share.net/file,shared.docm,e99a18c428cb38d5f260853678922e03,176.119.156.87,fail,fail,fail,blocked
+2026-07-04 11:12:45,hr@company.com,company.com,employee10@company.com,Holiday Schedule,https://company.com/hr,holiday.pdf,NA,10.0.0.25,pass,pass,pass,delivered
+2026-07-04 11:25:19,security@office365-alert.com,office365-alert.com,employee11@company.com,Mailbox Storage Full,http://office365-alert.com/login,storage.html,25d55ad283aa400af464c76d713c07ad,198.54.117.12,fail,fail,fail,quarantined
+2026-07-04 11:40:53,noreply@bank-secure-login.com,bank-secure-login.com,employee12@company.com,Verify Your Banking Details,http://bank-secure-login.com/verify,bank.docm,5f4dcc3b5aa765d61d8327deb882cf99,203.0.113.45,fail,fail,fail,blocked

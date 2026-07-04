@@ -1,0 +1,4 @@
+index=phishing
+| search subject="*Password*" OR subject="*Verify*" OR subject="*Invoice*" OR subject="*Mailbox*" OR subject="*Unusual*"
+| table time sender_email recipient subject url action
+| sort - time

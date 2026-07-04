@@ -1,0 +1,4 @@
+index=phishing
+| search action="quarantined"
+| table time sender_email sender_domain recipient subject url attachment_name source_ip action
+| sort - time

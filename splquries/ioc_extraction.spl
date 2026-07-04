@@ -1,0 +1,4 @@
+index=phishing
+| table time sender_email sender_domain url attachment_hash source_ip action
+| rename sender_email as Email_IOC sender_domain as Domain_IOC url as URL_IOC attachment_hash as Hash_IOC source_ip as IP_IOC
+| sort - time

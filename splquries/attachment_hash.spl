@@ -1,0 +1,4 @@
+index=phishing
+| search attachment_hash!="NA"
+| table time sender_email subject attachment_name attachment_hash action
+| sort - time

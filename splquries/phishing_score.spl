@@ -1,0 +1,10 @@
+index=phishing
+| eval score=0
+| eval score=score+if(spf_result=="fail",1,0)
+| eval score=score+if(dkim_result=="fail",1,0)
+| eval score=score+if(dmarc_result=="fail",1,0)
+| eval score=score+if(match(url,"^http://"),1,0)
+| eval score=score+if(match(attachment_name,"(?i)\.docm$|\.html$"),1,0)
+| eval severity=case(score>=5,"Critical",score=4,"High",score=3,"Medium",score<=2,"Low")
+| table time sender_email subject url attachment_name score severity action
+| sort - score

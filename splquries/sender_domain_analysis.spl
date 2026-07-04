@@ -1,0 +1,3 @@
+index=phishing
+| stats count values(sender_email) as senders values(source_ip) as source_ips values(action) as actions by sender_domain
+| sort - count
