@@ -226,6 +226,39 @@ Email Quarantine / Block
 | Initial Access | Spearphishing Link | T1566.002 |
 | Credential Access | Input Capture | T1056 |
 | Defense Evasion | Masquerading | T1036 |
+# 📂 Dataset
+
+This project uses a simulated phishing email dataset created for SOC investigation and threat detection practice.
+
+### Dataset Fields
+
+| Field | Description |
+|--------|-------------|
+| time | Email received timestamp |
+| sender_email | Sender email address |
+| sender_domain | Sender domain |
+| recipient | Recipient email |
+| subject | Email subject |
+| url | URL contained in the email |
+| attachment_name | Attachment filename |
+| attachment_hash | Attachment hash (IOC) |
+| source_ip | Sender IP address |
+| spf_result | SPF validation result |
+| dkim_result | DKIM validation result |
+| dmarc_result | DMARC validation result |
+| action | Security action (Delivered, Quarantined, Blocked) |
+
+### Total Records
+
+12 Email Events
+
+### Dataset Purpose
+
+- Phishing Detection
+- IOC Extraction
+- Email Investigation
+- Threat Hunting
+- Splunk Query Testing
 
 ---
 
